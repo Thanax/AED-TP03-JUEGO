@@ -1,0 +1,307 @@
+
+/*Gonzalo Martin Lucena K1051
+/*29/04/2015
+/*Tp Nº 3 "Juegp" Algoritmos y Estructura de Datos, Es un juego de Preguntas y Respuestas que va calculando un puntaje, 
+/*Puede repetir la misma pregunta pero esta no da puntos mas de 1 vez... en teoria
+
+#include <iostream>
+
+//{}
+int main () 
+{
+using namespace std;  
+ 
+int puntaje = 0; 
+char input = '9'; 
+
+//comienzo variables de "pregunta respondida" 
+bool M1 = false;   
+bool M2 = false;  
+bool M3 = false; 
+bool V1 = false; 
+bool V2 = false;   
+bool V3 = false;  
+bool A1 = false; 
+bool A2 = false; 
+bool L1 = false; 
+bool L2 = false;
+
+cout << "Bienvenido futuro perdedor\n";
+cout << "Elija una categoria ingresando el numero indicado\n"; 
+cout << "Presione 's' para salir\n";
+
+while (input != 's')  {
+      cout << "1-Mitologia\n"; 
+      cout << "2-Anime\n";
+      cout << "3-Videojuegos\n";
+      cout << "4-Literatura\n";
+ 	  cin >> input; 
+ 	  
+ 	  switch (input) { 
+  	         case '1': 
+                  { 
+ // p r e g u n t a   m i t o l o g i a   1 
+ 	 	 cout << "1- Mitologia\n"; 
+ 	 	 cout << "M1.La mitologia griega sostiene que al comienzo de todo existia Caos...";
+ 	 	 cout << "Y de Caos surgio...\n"; 
+ 	 	 cout << "1- Nix, la Noche\n"; 
+ 	 	 cout << "2- Gea, la Tierra\n"; 
+ 	 	 cout << "3- Urano, el Cielo\n";
+ 	 	 cout << "4- Zeus, el Relampago\n" ;
+  	     cin >> input; 
+// c a l c u l o   d e   p u n t a j e 
+         if (input = '1') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 break;
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+// p r e g u n t a   r e s p o n d i d a   >   s i 
+         M1 = true;                           
+// s i g u i e n t e   p r e g u n t a 
+ 	 	 cout << "M2.La mitologia griega cuenta con varias deidades relacionadas a la muerte,";   
+ 	 	 cout << "¿Cual de estas es la Deidad de la Muerte Pacifica\n"; 
+ 	 	 cout << "1- Las Moirai, tres diosas que manejan los hilos del destino\n"; 
+ 	 	 cout << "2- Hades, Hermano de Zeus y soberano del Inframundo\n";
+ 	 	 cout << "3- Thanatos, descendiente de Nix, la Noche, y Hermano de Hipnos Dios del Sueño\n"; 
+ 	 	 cout << "4- Erebus, Dios primordial que encarna la Oscuridad\n"; 
+         cin >> input; 
+         if (input = '3') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 M2 = true;
+//ultima pregunta
+ 	 	 cout << "M3.segun la mitologia griega, los Titanes dominaban el Mundo antes que los Dioses, ";   
+ 	 	 cout << "¿Cual de estas opciones nombra 3 Titanes?\n"; 
+ 	 	 cout << "1- Zeus, Poseidon y Hades\n" ;
+ 	 	 cout << "2- Leto, Hiperion y Mnemosyne\n";
+ 	 	 cout << "3- Baco, Jupiter y Saturno\n" ;
+ 	 	 cout << "4- Isis, Osiris y Anubis\n"; 
+         cin >> input; 
+         if (input = '2') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 M3 = true;
+ 	 	 }
+ 	 	 case  '2': 
+               {
+         cout << "2- Videojuegos\n"; 
+ 	 	 cout << "V1.La saga de Videojuegos Devil May Cry esta protagonizada por Dante ";   
+ 	 	 cout << "quien es...\n"; 
+ 	 	 cout << "1- La reencarnacion de un Demonio Legendario conocido como el Zorro de 9 colas\n";
+ 	 	 cout << "2- El hijo de un Demonio Legendario llamado Vergil\n"; 
+ 	 	 cout << "3- Mitad Demonio por parte materna y mitad Humano por parte paterna\n"; 
+ 	 	 cout << "4- Cazador de Demonios y descendiente de Sparda\n"; 
+ 	 	 cin >> input; 
+         if (input = '4') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 V1 = true; 
+ 	 	 
+ 	 	 cout << "V2.Bloodborne es el sucesor espiritual de Dark Souls, juego dificil pero justo...";   
+ 	 	 cout << "y Dark Souls es sucesor de...\n"; 
+ 	 	 cout << "1-Kings Field\n ";
+ 	 	 cout << "2-Demons Souls\n";
+ 	 	 cout << "3-Titan Souls\n ";
+ 	 	 cout << "4-Dragons Dogma\n"; 
+ 	 	 cin >> input; 
+         if (input = '2') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 V2 = true; 
+
+ 	 	 cout << "V3.La compania japonesa Nippon Ichi aparece en el libro Guinness de records mundiales,";   
+ 	 	 cout << "la razon es...\n"; 
+ 	 	 cout << "1- Sus Juegos son los peor puntuados por la critica, con un promedio de 1,75\n"; 
+ 	 	 cout << "2- Sus Juegos son los mejor puntuados por la critica, con un promedio de 9,41\n"; 
+ 	 	 cout << "3- Sus juegos tienen la mayor cantidad de contenido jugable, con miles de horas jugables cada uno\n";
+ 	 	 cout << "4- Es la compania con la mayor cantidad de juegos RPG tacticos desarrollados a la fecha\n";
+ 	 	 cin >> input; 
+         if (input = '4') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 
+ 	 	 V3 = true; 
+         } 
+         case '3': 
+              {
+ 	 	 cout << "3- Anime\n"; 
+ 	 	 cout << "A1.El Jardin de los Pecadores, es una serie compuesta por varias peliculas  ";   
+ 	 	 cout << " y cuyo protagonista es...\n"; 
+ 	 	 cout << "1- S h i n j i , un estudiante que descubre que posee los Ojos del Dios de la Muerte\n"; 
+ 	 	 cout << "2- A r c u e i d , una vampiresa ancestral que acaba de perder sus poderes\n"; 
+ 	 	 cout << "3- S h i n j i , quien posee doble personalidad, impulsos asesinos y Ojos de Dios de la Muerte\n"; 
+ 	 	 cout << "4- I l l y a , una chica con poderes magicos similares a los de Sailor Moon\n"; 
+ 	 	 cin >> input; 
+         if (input = '4') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 A1 = true; 
+ 
+ 	 	 cout << "A2. S t e i n s ; G a t e  es un anime que trata sobre viajes temporales y su repercusion, ";   
+ 	 	 cout << "El primer viaje que  la serie nos presenta consiste en...\n"; 
+ 	 	 cout << "1- Un mensaje de celular que viaja al pasado gracias a un microondas\n"; 
+ 	 	 cout << "2- Una habitacion en la que el tiempo pasa al reves\n"; 
+ 	 	 cout << "3- J o h n   T i t o r, quien viaja al resente desde el futuropara evitar la 3ra guerra mundial\n"; 
+ 	 	 cout << "4- Un hombre que puede mandar su conciencia hacia atras en el tiempo\n"; 
+ 	 	 cin >> input; 
+         if (input = '1') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 A2 = true;
+           } 
+
+           case '4': 
+                {
+ 	 	 cout << " 4- Literatura\n"; 
+ 	 	 cout << " L1.Terry Prattchet, famoso autor britanico, es mayormente conocido por su humor ironico, "; 
+ 	 	 cout << " El cual se ve reflejado en su saga Discomundo, la cual trata de...\n"; 
+ 	 	 cout << " 1- Un futuro en el que el mundo entero es una pista de baile y el sol es una bola de disco\n";
+ 	 	 cout << " 2- Un Apocalipsis Vampirico en el que los humanos usan agua para defenderse\n"; 
+ 	 	 cout << " 3 -Un Mundo Medieval que se apoya sobre el caparazon de una tortuga cosmica gigante\n"; 
+ 	 	 cout << " 4 -Un Mago detective que solo sabe un hechizo pero no sabe como hacerlo\n"; 
+ 	 	 cin >> input; 
+         if (input = '3') 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 L1 = true; 
+ 	 	 cout << "L2.La novela visual 'Cuando Lloran las Gaviotas' es la continuacion de la popular  "; 
+ 	 	 cout << " 'Cuando Lloran las Cigarras', la secuela es sobre...\n"; 
+ 	 	 cout << "1- Un anciano relatandole a su mujer con alzheimer la historia de como se conocieron\n"; 
+ 	 	 cout << "2- La vitacora de una nave espacial destrozada con la historia de sus pasajeros\n"; 
+ 	 	 cout << "3- Una fantasia de magia y brujas que luchan por resistir el veneno del aburrimiento\n"; 
+ 	 	 cout << "4- Un misterio de asesinatos que sucede en una isla remota\n";
+ 	 	 cin >> input; 
+         if ((input = '3') or (input = '4')) 
+            { 
+ 	 	 	 cout << "¡Correcto!\n"; 
+ 	 	 	 if (M1 = false) 
+             { 
+ 	 	 	 	 puntaje += 10;   
+             } 
+ 	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
+ 	 	 	 } 
+           else {
+ 	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
+             break; 
+ 	 	 	 } 
+ 	 	 L2 = true; 
+ 	 	 } 
+ 	 	 
+ 	 case 's':
+ 	 	 break; 
+ 	 case 'S': 
+ 	 	 break; 
+          	 default: 
+                   	 cout << " N o   m a m e s ,   e l e g i   a l g o   q u e   t e n g a   s e n t i d o .\n"; 
+                   	 break; 
+ 	 } 
+ 
+                 
+ 
+ 	 cout << "Su puntaje hasta ahora es: \n" << puntaje << "Ingrese s para salir  ";   
+ 	 cout << " o seleccione otra categoria\n"; 
+ 	 cout << "(Tenga en cuenta que las preguntas ya respondidas no suman puntaje)\n"; 
+ } 
+ 
+cout <<   " S u   p u n t a j e   t o t a l   e s :   \n" << puntaje << endl; 
+cout <<   " Basado en tu desempeño me parece que...: \n";
+if (puntaje <=40)
+ 	 cout << "No entendes nada Juan Nieve\n";   
+else if (puntaje <=80) 
+ 	 	 cout << "No esta Nada mal, podrias ser panadero\n"; 
+ 	 else
+ 	 	 cout << "SEGURO hiciste trampa, t r a m p a\n"; 
+ 	 
+cout <<   " i n g r e s e   c u a l q u i e r   v a l o r   p a r a   t e r m i n a r " ; 
+cin >> input; 
+ 	 	 }
+
