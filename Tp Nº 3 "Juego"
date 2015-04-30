@@ -111,6 +111,7 @@ while (input != 's')  {
  	 	 	 } 
  	 	 M3 = true;
  	 	 }
+// siguiente categoria
  	 	 case  '2': 
                {
          cout << "2- Videojuegos\n"; 
