@@ -12,7 +12,7 @@ int main ()
 using namespace std;  
  
 int puntaje = 0; 
-char input = '9'; 
+char input = '0'; 
 
 //comienzo variables de "pregunta respondida" 
 bool M1 = false;   
@@ -58,7 +58,6 @@ while (input != 's')  {
  	 	 	 	 puntaje += 10;   
              } 
  	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
- 	 	 	 break;
  	 	 	 } 
            else {
  	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
