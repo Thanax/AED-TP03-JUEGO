@@ -77,7 +77,7 @@ while (input != 's')  {
          if (input == '3') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (M2 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -99,7 +99,7 @@ while (input != 's')  {
          if (input == '2') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (M3 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -125,7 +125,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (V1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -147,7 +147,7 @@ while (input != 's')  {
          if (input == '2') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (V2 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -169,7 +169,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (V3 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -195,7 +195,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (A1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -217,7 +217,7 @@ while (input != 's')  {
          if (input == '1') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (A2 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -243,7 +243,7 @@ while (input != 's')  {
          if (input == '3') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (L1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -264,7 +264,7 @@ while (input != 's')  {
          if ((input == '3') or (input == '4')) 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 == false) 
+ 	 	 	 if (L2 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -305,3 +305,4 @@ else if (puntaje <=80)
 cout <<   " i n g r e s e   c u a l q u i e r   v a l o r   p a r a   t e r m i n a r " ; 
 cin >> input; 
  	 	 }
+
