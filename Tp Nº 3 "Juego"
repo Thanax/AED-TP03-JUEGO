@@ -53,9 +53,11 @@ while (input != 's')  {
          if (input == '1') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
- 	 	 	 	 puntaje += 10;   
+ 	 	 	 	 puntaje += 10;  
+// p r e g u n t a   r e s p o n d i d a   >   s i 
+                 M1 = true;    
              } 
  	 	 	 cout << "Pase a la siguiente pregunta o presione 's' para ver su puntaje y salir\n"; 
  	 	 	 } 
@@ -63,8 +65,7 @@ while (input != 's')  {
  	 	 	 cout << "Como que mandaste cualquier fruta, intenta otra o raja de aca\n"; 
              break; 
  	 	 	 } 
-// p r e g u n t a   r e s p o n d i d a   >   s i 
-         M1 = true;                           
+                        
 // s i g u i e n t e   p r e g u n t a 
  	 	 cout << "M2.La mitologia griega cuenta con varias deidades relacionadas a la muerte,";   
  	 	 cout << "¿Cual de estas es la Deidad de la Muerte Pacifica\n"; 
@@ -76,7 +77,7 @@ while (input != 's')  {
          if (input == '3') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -98,7 +99,7 @@ while (input != 's')  {
          if (input == '2') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -124,7 +125,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -146,7 +147,7 @@ while (input != 's')  {
          if (input == '2') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -168,7 +169,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -194,7 +195,7 @@ while (input != 's')  {
          if (input == '4') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -216,7 +217,7 @@ while (input != 's')  {
          if (input == '1') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -242,7 +243,7 @@ while (input != 's')  {
          if (input == '3') 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -263,7 +264,7 @@ while (input != 's')  {
          if ((input == '3') or (input == '4')) 
             { 
  	 	 	 cout << "¡Correcto!\n"; 
- 	 	 	 if (M1 = false) 
+ 	 	 	 if (M1 == false) 
              { 
  	 	 	 	 puntaje += 10;   
              } 
@@ -287,13 +288,13 @@ while (input != 's')  {
  
                  
  
- 	 cout << "Su puntaje hasta ahora es: \n" << puntaje << "Ingrese s para salir  ";   
+ 	 cout << "Su puntaje hasta ahora es: \n" << puntaje << endl << "Ingrese s para salir  ";   
  	 cout << " o seleccione otra categoria\n"; 
  	 cout << "(Tenga en cuenta que las preguntas ya respondidas no suman puntaje)\n"; 
  } 
  
-cout <<   " S u   p u n t a j e   t o t a l   e s :   \n" << puntaje << endl; 
-cout <<   " Basado en tu desempeño me parece que...: \n";
+cout <<   " S u   p u n t a j e   t o t a l   e s :   \n" << puntaje << " " << endl; 
+cout <<   " Basado en sus respuestas me parece que...: \n";
 if (puntaje <=40)
  	 cout << "No entendes nada Juan Nieve\n";   
 else if (puntaje <=80) 
@@ -304,4 +305,3 @@ else if (puntaje <=80)
 cout <<   " i n g r e s e   c u a l q u i e r   v a l o r   p a r a   t e r m i n a r " ; 
 cin >> input; 
  	 	 }
-
