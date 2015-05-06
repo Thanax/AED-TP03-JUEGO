@@ -308,7 +308,7 @@ if (puntaje <=40)
 else if (puntaje <=80) 
  	 	 cout << "No esta Nada mal, podrias ser panadero\n"; 
  	 else
- 	 	 cout << "SEGURO hiciste trampa, t r a m p a\n"; 
+ 	 	 cout << "Sabelotodo\n"; 
  	 
 cout <<   " i n g r e s e   c u a l q u i e r   v a l o r   p a r a   t e r m i n a r " ; 
 cin >> input; 
