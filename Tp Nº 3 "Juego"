@@ -310,4 +310,6 @@ else if (puntaje <=80)
  	 else
  	 	 cout << "Sabelotodo\n"; 
  	 
+ 	 cout <<   " i n g r e s e   c u a l q u i e r   v a l o r   p a r a   t e r m i n a r " ; 
+   cin >> input; 
  	 	 }
