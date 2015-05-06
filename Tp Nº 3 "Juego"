@@ -291,7 +291,7 @@ while (input != 's')  {
  	 case 'S': 
  	 	 break; 
           	 default: 
-                   	 cout << " N o   m a m e s ,   e l e g i   a l g o   q u e   t e n g a   s e n t i d o .\n"; 
+                   	 cout << " E l e g i   a l g o   q u e   t e n g a   s e n t i d o .\n"; 
                    	 break; 
  	 } 
  
@@ -302,8 +302,7 @@ while (input != 's')  {
  	 cout << "(Tenga en cuenta que las preguntas ya respondidas no suman puntaje)\n"; 
  } 
  
-cout <<   " S u   p u n t a j e   t o t a l   e s :   \n" << puntaje << " " << endl; 
-cout <<   " Basado en sus respuestas me parece que...: \n";
+cout <<   " Su calificacion es: \n";
 if (puntaje <=40)
  	 cout << "No entendes nada Juan Nieve\n";   
 else if (puntaje <=80) 
